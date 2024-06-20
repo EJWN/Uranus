@@ -1,0 +1,21 @@
+name: Branch Name Check
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  check-branch-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check branch name
+        run: |
+          BRANCH_NAME=$(echo "${GITHUB_REF#refs/heads/}")
+          if [[ $BRANCH_NAME =~ ^master$ ]]; then
+            exit 0
+          fi
+          if [[ ! $BRANCH_NAME =~ ^URANUS-[0-9]* ]]; then
+            echo "Branch $BRANCH_NAME does not start with: 'URANUS-<number>'"
+            exit 1
+          fi
