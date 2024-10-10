@@ -5,22 +5,46 @@
     padding: 10px 20px;
     background-color: var(background-color);
     color: var(--gray-900);
+    position: relative;
 }
 
-.logo {
-    font-size: 3.125rem;
-    font-weight: bold;
+.logo-container {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
-.logo-image {
-    margin-right: 1rem;
-    max-width: 100%;
-    height: auto;
+.logo-text {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: -2rem;
+    z-index: 3;
 }
 
-.nav-buttons {
-    // display: flex;
-    // align-items: center;
+.spinner-1 {
+    background-image: linear-gradient(#ff06b5 33%, #06b5ff);
+    width: 6rem;
+    height: 6rem;
+    animation: spinning 10s linear infinite;
+    text-align: center;
+    border-radius: 3rem;
+    filter: blur(0.05rem);
+    box-shadow: 0rem -0.5rem 2rem 0rem #ff06b5, 0rem 0.5rem 2rem 0rem #06b5ff;
+    z-index: 2;
+}
+
+.spinner-2 {
+    background-color: rgb(36, 36, 36);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    filter: blur(0.3rem);
+    z-index: 1;
+}
+
+@keyframes spinning {
+    to {
+        transform: rotate(360deg);
+    }
 }

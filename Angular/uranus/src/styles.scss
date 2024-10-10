@@ -23,6 +23,24 @@
             var(--vivid-pink) 50%,
             var(--orange-red) 100%);
 
+    --rainbow-gradient: linear-gradient(45deg,
+            #c0392b,
+            #f39c12,
+            #f1c40f,
+            #2ecc71,
+            #3498db,
+            #2980b9,
+            #9b59b6,
+            #8e44ad,
+            #c0392b,
+            #f39c12,
+            #f1c40f,
+            #2ecc71,
+            #3498db,
+            #2980b9,
+            #9b59b6,
+            #8e44ad);
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -42,22 +60,33 @@ a {
 
 h1 {
     font-size: 3.125rem;
-    color: var(--gray-900);
-    font-weight: 500;
+    font-weight: 300;
+    color: var(--gray-700);
     line-height: 100%;
     letter-spacing: -0.125rem;
     margin: 0;
-    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-        "Segoe UI Symbol";
 }
 
-.inline-h1 {
-    display: inline;
-}
-
-p {
+h2 {
+    font-size: 2.425rem;
+    font-weight: 300;
     color: var(--gray-700);
+    line-height: 100%;
+    letter-spacing: -0.1rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.725rem;
+    font-weight: 300;
+    color: var(--gray-700);
+    line-height: 100%;
+    letter-spacing: -0.075rem;
+    margin: 0;
+}
+
+.inline {
+    display: inline;
 }
 
 .divider-1-vertical {
@@ -96,17 +125,35 @@ p {
     gap: 1rem;
 }
 
+.showcase-full {
+    flex: 0 0 65%;
+    margin: 5rem auto;
+    box-sizing: border-box;
+
+    p {
+        color: var(--gray-400);
+    }
+}
+
 .showcase-left {
     flex: 0 0 30%;
-    padding: 1rem;
+    margin: 1rem;
     box-sizing: border-box;
+
+    p {
+        color: var(--gray-400);
+    }
 }
 
 .showcase-right {
     flex: 0 0 70%;
-    padding: 1rem;
+    margin: 1rem;
     box-sizing: border-box;
     background: var(--light-to-dark-to-light-diagonal-gradient);
+
+    p {
+        color: var(--gray-700);
+    }
 }
 
 .showcase-image {
@@ -122,6 +169,7 @@ p {
         padding: 0.5px;
         background: var(--red-to-pink-to-purple-vertical-gradient);
     }
+
     .divider-1-vertical {
         height: 1px;
         width: 100%;
@@ -141,6 +189,6 @@ p {
 
     .showcase-left,
     .showcase-right {
-        flex: 1 1 100%;
+        flex: 1 1 auto;
     }
 }

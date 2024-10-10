@@ -19,11 +19,9 @@ export class FancyButtonComponent {
 
   onMouseEnter() {
     this.fancyButtonService.set(true);
-    console.log("HOVERING");
   }
 
   onMouseLeave() {
     this.fancyButtonService.set(false);
-    console.log("NOT HOVERING");
   }
 }

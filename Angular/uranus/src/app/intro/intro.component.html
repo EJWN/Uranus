@@ -1,15 +1,46 @@
 <div class="showcase-row">
+    <div class="showcase-full">
+        <h1>Welcome</h1>
+        <p>Have you ever wondered what is needed to make a website work? What it all entails? Perhaps you are a web developer, and have intimate knowledge on this topic. Perhaps you are a recruiter and have no clue. In either case, I welcome you, curious explorer, to a journey through the intricate web of technology that powers this very site.</p>
+        <p>Together, we'll delve into the underlying code, uncover the hidden frameworks, and traverse the infrastructure that sustains this digital habitat. Like the delicate balance of life in nature, this website relies on countless components working in concert — each with a crucial role to play in this ever-evolving digital landscape.</p>
+        <p>Prepare to witness the fascinating dance of data, design, and development. Welcome to the hidden world behind the screen!</p>
+    </div>
+</div>
+<div class="showcase-row">
     <div class="showcase-left">
-        <h1 class="inline-h1">Welcome</h1>
-         to this digital domain.
-        <p>Herein, may you find insight and understanding as you embark upon the exploration of what we have created.</p>
-        <p>This website is constructed to elucidate its function, beginning from the instant you visit
-        the URL, and extending through to the final moment when you are engaged in reading these words.</p>
-        <p>Let us therefore commence at the origin: the initial invocation of the URL.</p>
+        <h2 class="inline">In the beginning</h2><p class="inline"> there was the URL.</p>
+        <p>And the user, seeking knowledge or delight, did type it into the address bar, and pressed Enter. And lo, the journey began. Behind the screen, in realms unseen, code stirred, and servers were called into action. And it was good.</p>
     </div>
     <div class="divider-1-vertical" role="separator" aria-label="Divider-Vertical"></div>
     <div class="showcase-right">
-        <img class="showcase-image" src="earth-icon-vector-art.png" alt="Logo" />
-        <p>There currently lacks text accompanying this image. Pray this gets rectified in the nearby future.</p>
+
+    </div>
+</div>
+<div class="showcase-row">
+    <div class="showcase-left">
+        <h2>Angular</h2>
+        <p>The page you're looking at was build using a framework we call Angular. Angular is a remarkable framework that empowers the creation of dynamic web applications through its component-based architecture</p>
+        <p>By crafting reusable components that encompass HTML, CSS, and TypeScript, developers weave together the fabric of their applications. These components are organized into modules, each a cohesive unit of functionality.</p>
+        <p>If we want to see how it all operates, we must first set up a development environment with Node.js and the Angular CLI, tools that simplify the process of project creation and deployment. In this way, Angular enables the construction of engaging and responsive applications, showcasing the harmony between technology and creativity.</p>
+    </div>
+    <div class="divider-2-vertical" role="separator" aria-label="Divider-Vertical"></div>
+    <div class="showcase-right">
+        <!-- <app-window title="intro.pdf">
+            <img src="earth-icon-vector-art.png" alt="Logo" />
+            <p>At present, the image stands alone, without the text it so dearly deserves. One can only hope that, in the near future, this imbalance will be addressed, and the story behind the image will finally be told.</p>
+        </app-window> -->
+        
+        
+        <h3>Typescript</h3>
+        <p></p>
+        <app-window title="intro.component.ts" [code]="typescriptCode" [numberOfRows]="numberOfRows(typescriptCode)"></app-window>
+
+        <h3>HTML</h3>
+        <p></p>
+        <app-window title="intro.component.html" [code]="htmlCode" [numberOfRows]="numberOfRows(htmlCode)"></app-window>
+
+        <h3>CSS</h3>
+        <p></p>
+        <app-window title="intro.component.scss" [code]="cssCode" [numberOfRows]="numberOfRows(cssCode)"></app-window>
     </div>
 </div>

@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="header">
+        <div class="circle-container">
+            <span class="red circle"></span>
+        </div>
+        <div class="circle-container">
+            <span class="yellow circle"></span>
+        </div>
+        <div class="circle-container">
+            <span class="green circle"></span>
+        </div>
+        <div class="title">{{title}}</div>
+    </div>
+
+    <div *ngIf="code" class="code-container">
+        <textarea class="code" readonly="true" [rows]="numberOfRows">{{code}}</textarea>
+    </div>
+    <div *ngIf="!code">
+        <ng-content></ng-content>
+    </div>
+</div>
