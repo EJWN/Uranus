@@ -1,11 +1,4 @@
 :root {
-    --bright-blue: oklch(51.01% 0.274 263.83);
-    --electric-violet: oklch(53.18% 0.28 296.97);
-    --french-violet: oklch(47.66% 0.246 305.88);
-    --vivid-pink: oklch(69.02% 0.277 332.77);
-    --hot-red: oklch(61.42% 0.238 15.34);
-    --orange-red: oklch(63.32% 0.24 31.68);
-
     --gray-900: oklch(95% 0.005 270); // Very light gray, almost white
     --gray-700: oklch(85% 0.010 270); // Light gray
     --gray-400: oklch(70% 0.015 270); // Medium gray
@@ -13,33 +6,15 @@
     --black: black; // Black
     --background-color: #1f1f1f; // Background - very dark gray
 
-    --red-to-pink-to-purple-vertical-gradient: linear-gradient(180deg,
-            var(--orange-red) 0%,
-            var(--vivid-pink) 50%,
-            var(--electric-violet) 100%);
+    --pink-to-purple-to-blue-vertical-gradient: linear-gradient(180deg,
+            #ff06b5 0%,
+            #835eda 50%,
+            #06b5ff 100%);
 
-    --purple-to-pink-to-red-vertical-gradient: linear-gradient(180deg,
-            var(--electric-violet) 0%,
-            var(--vivid-pink) 50%,
-            var(--orange-red) 100%);
-
-    --rainbow-gradient: linear-gradient(45deg,
-            #c0392b,
-            #f39c12,
-            #f1c40f,
-            #2ecc71,
-            #3498db,
-            #2980b9,
-            #9b59b6,
-            #8e44ad,
-            #c0392b,
-            #f39c12,
-            #f1c40f,
-            #2ecc71,
-            #3498db,
-            #2980b9,
-            #9b59b6,
-            #8e44ad);
+    --purple-to-blue-to-pink-vertical-gradient: linear-gradient(180deg,
+            #06b5ff 0%,
+            #835eda 50%,
+            #ff06b5 100%);
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -51,11 +26,6 @@ body {
     font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
         "Segoe UI Symbol";
-}
-
-a {
-    color: #bb86fc;
-    text-decoration: none;
 }
 
 h1 {
@@ -94,7 +64,7 @@ h3 {
     margin-inline: 0.5rem;
     padding: 0.5px;
     position: relative;
-    background: var(--red-to-pink-to-purple-vertical-gradient);
+    background: var(--pink-to-purple-to-blue-vertical-gradient);
 }
 
 .divider-2-vertical {
@@ -102,7 +72,7 @@ h3 {
     margin-inline: 0.5rem;
     padding: 0.5px;
     position: relative;
-    background: var(--purple-to-pink-to-red-vertical-gradient);
+    background: var(--purple-to-blue-to-pink-vertical-gradient);
 }
 
 .showcase-container {
@@ -167,7 +137,7 @@ h3 {
         width: 100%;
         margin-block: 1.5rem;
         padding: 0.5px;
-        background: var(--red-to-pink-to-purple-vertical-gradient);
+        background: var(--pink-to-purple-to-blue-vertical-gradient);
     }
 
     .divider-1-vertical {
@@ -175,7 +145,7 @@ h3 {
         width: 100%;
         margin-block: 1.5rem;
         padding: 0.5px;
-        background: var(--purple-to-pink-to-red-vertical-gradient);
+        background: var(--purple-to-blue-to-pink-vertical-gradient);
     }
 
     .showcase {

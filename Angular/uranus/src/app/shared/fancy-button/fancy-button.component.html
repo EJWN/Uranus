@@ -1,7 +1,2 @@
-<button *ngIf="!isActive" class="fancy-button" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
-    <span>{{text}}</span>
-</button>
-
-<button *ngIf="isActive" class="fancy-button-active" [ngClass]="{ 'deactivate': fancyButtonService.isHovered() }">
-    <span>{{text}}</span>
-</button>
+<button *ngIf="!isActive" class="button" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">{{text}}</button>
+<button *ngIf="isActive" class="button-active" [ngClass]="{ 'deactivate': fancyButtonService.isHovered() }">{{text}}</button>

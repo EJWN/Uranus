@@ -48,3 +48,9 @@
         transform: rotate(360deg);
     }
 }
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
